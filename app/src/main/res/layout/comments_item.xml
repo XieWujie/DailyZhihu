@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/background_white"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/comment_circle_view"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    </FrameLayout>
+        <LinearLayout
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:id="@+id/comment_name"
+                    android:textColor="@color/text_black"
+                    android:textSize="17sp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/comment_counts_view"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toLeftOf="@+id/comment_support"
+                    android:src="@drawable/thumb_up"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp" />
+                <TextView
+                    android:id="@+id/comment_support"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_gray"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/comment_content"
+                    android:textColor="@color/text_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+               <FrameLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:id="@+id/reply_comment_author"
+                       android:textSize="15sp"
+                       android:textColor="@color/text_black"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+                   <TextView
+                       android:id="@+id/reply_content"
+                       android:textColor="@color/text_gray"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+               </FrameLayout>
+                <TextView
+                    android:id="@+id/comment_date"
+                    android:textColor="@color/text_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

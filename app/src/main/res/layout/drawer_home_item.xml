@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginLeft="8dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/download_view"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/downloads"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    <TextView
+        android:id="@+id/download"
+        android:layout_toRightOf="@+id/download_view"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:layout_margin="7dp"
+        android:textColor="@color/text_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <ImageView
+        android:id="@+id/home_view"
+        android:layout_width="40dp"
+        android:src="@drawable/home"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/home_text"
+        android:layout_toRightOf="@+id/home_view"
+        android:gravity="center_vertical"
+        android:text="主页"
+        android:textColor="@color/text_black"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+</LinearLayout>
